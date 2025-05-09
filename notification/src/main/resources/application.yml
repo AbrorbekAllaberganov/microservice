@@ -1,0 +1,20 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: notification
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8093/eureka
+
+rabbitmq:
+  queue:
+    name: queue.name
+  exchange:
+    name: exchange.name
+  routing:
+    key: routing.key

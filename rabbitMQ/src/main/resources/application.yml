@@ -1,0 +1,19 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: rabbitmq
+
+rabbitmq:
+  routing:
+    key: routing.key
+  queue:
+    name: queue.name
+  exchange:
+    name: exchange.name
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8093/eureka
